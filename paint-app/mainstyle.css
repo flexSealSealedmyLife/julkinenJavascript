@@ -1,0 +1,50 @@
+body{
+    background-color: rgb(74, 74, 74);
+}
+
+.wrapper{
+    max-width: 900px;
+    margin: auto;
+    font-family: "Arial";
+    background-color: rgb(74, 74, 74);
+}
+
+.toolbar{
+    width: 100%;
+    background-color: rgb(74 , 74, 74);
+    overflow: auto;
+}
+
+.toolbar a{
+    float: left;
+    width: 11%;
+    text-align: center;
+    padding: 6px 5px;
+    transition: all 0.3s ease;
+    color: white;
+}
+
+.toolbar a:hover{
+    background-color: black;
+}
+
+.selected{
+    background-color: rgb(1, 1, 167);
+}
+
+#my-canvas{
+    width: 100%;
+    background-color: white;
+    border: 3px solid blue;
+}
+
+#img-data-div{
+    width: 100%;
+    max-width: 900px;
+    height: 200px;
+}
+
+.toolbar a img{
+    max-width: 100%;
+    height: auto;
+}

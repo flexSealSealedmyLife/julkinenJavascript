@@ -1,0 +1,32 @@
+.container{
+    background: url('./album-background-blank-1089842.jpg') no-repeat;
+    background-size: cover; 
+
+}
+/*
+
+.vertical-menu {
+    width: 500px; 
+    margin: auto;
+    border: 5px;
+    border-color: black;
+    
+  }
+  
+  .vertical-menu a {
+      
+    color: black; 
+    display: block;
+    padding: 12px; 
+    text-decoration: none; 
+    text-align: center;
+  }
+  
+  .vertical-menu a:hover {
+    background-color: #ccc;
+  }
+  
+  .vertical-menu a.active {
+    background-color: #4CAF50;
+    color: white;
+  }*/

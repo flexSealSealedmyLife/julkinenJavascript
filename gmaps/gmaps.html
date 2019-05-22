@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Google maps api test</title>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    <style>
+        #map{
+            height:600px;
+            width:100%;
+        }
+        </style>
+</head>
+<body>
+    <h1>Google maps</h1>
+    <button type="button" class="btn" onclick="javascript:history.back()">Back</button>
+
+    <div id="map"></div>
+        <script>
+            function initMap() {
+                var options = {
+                    zoom: 10,
+                    center: {lat:65.0121, lng:25.4651}
+                }
+                var map = new google.maps.Map(document.getElementById('map'), options);
+             
+                addMarker({coords:{lat:65.0593, lng:25.4663},
+                iconImage:'./university.svg',
+                content:'<h1>Oulu University</h1>'});
+
+                function addMarker(props) {
+                    var marker = new google.maps.Marker({
+                    position:props.coords,
+                    map:map
+                  });
+                  if(props.iconImage) {
+                      marker.setIcon(props.iconImage);
+                  }
+                  if(props.content) {
+                      var infoWindow = new google.maps.InfoWindow({
+                          content:props.content
+                      });
+
+                      marker.addListener('click', function() {
+                        infoWindow.open(map, marker);
+                    });
+                  }
+                 
+        
+                }
+            }
+            </script>
+
+        <script async defer
+         src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBYuUUD5aH0v_G5FvM8fdV5N0s2phQe0-k&callback=initMap"
+        async defer>
+        </script>
+    
+    
+</body>
+</html>

@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width = device-width, initial scale = 1">
+        <title>JavaScript Painttia</title>
+        <link rel="stylesheet" type="text/css" href="mainstyle.css">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+        <style>
+        body{
+             background-color: rgb(74, 74, 74);
+            }
+            </style>
+        <script src="jspaint.js"></script>
+    </head>
+    <body>
+        <div class="wrapper">
+                <button type="button" class="btn" onclick="javascript:history.back()">Back</button>
+            <div class="toolbar">
+                <a class="selected" href="#" id="open" onclick="OpenImage()">
+                <img src="open-icon.png"></a>
+                <a class="#" href="#" id="save" onclick="SaveImage()">
+                <img src="save-icon.png"></a>
+                <a class="#" href="#" id="brush" onclick="ChangeTool('brush')">
+                <img src="brush-icon.png"></a>
+                <a class="#" href="#" id="line" onclick="ChangeTool('line')">
+                <img src="line-icon.png"></a>
+                <a class="#" href="#" id="rectangle" onclick="ChangeTool('rectangle')">
+                <img src="rectangle-icon.png"></a>
+                <a class="#" href="#" id="circle" onclick="ChangeTool('circle')">
+                <img src="circle-icon.png"></a>
+                <a class="#" href="#" id="ellipse" onclick="ChangeTool('ellipse')">
+                <img src="ellipse-icon.png"></a>
+                <a class="#" href="#" id="polygon" onclick="ChangeTool('polygon')">
+                <img src="polygon-icon.png"></a>
+            </div><br>
+            <canvas id="my-canvas" width="600" height="600"></canvas>
+            <div id="img-data-div">
+                <a href="#" id="img-file" download="kuva.png">Lataa kuva</a>                    
+            </div>
+        </div>
+    </body>
+</html>

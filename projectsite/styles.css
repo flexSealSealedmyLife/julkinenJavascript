@@ -1,0 +1,63 @@
+html{
+    background: url(codes.jpg);
+    
+}
+
+.container{
+    background-color: rgba(92, 92, 92, 0.3);
+    display: table;
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+}
+
+.banner{
+    font-size: 40px;
+    text-align: center;    
+    background-color: white;
+    opacity: 0.6;
+    filter: alpha(opacity=30);
+    margin-left: auto;
+    margin-right: auto;
+    width: 400px;
+    height: 50px;
+    margin-bottom: 50px;
+    border-radius: 25px;
+}
+
+
+.vertical-menu {
+    display: table-cell;
+    vertical-align: middle;
+  }
+
+  .table {
+      
+    margin-left: auto;
+    margin-right: auto;
+    width: 400px;
+    height: 600px;
+    /*whatever width you want*/
+  }
+  
+  .vertical-menu a {
+      
+    text-align: center;
+    background-color: rgb(255, 255, 255); /* Grey background color */
+    color: rgb(0, 0, 0); /* Black text color */
+    display: block; /* Make the links appear below each other */
+    padding: 12px; /* Add some padding */
+    text-decoration: none; /* Remove underline from links */
+  }
+  
+  .vertical-menu a:hover {
+    background-color: #ccc; /* Dark grey background on mouse-over */
+    
+}
+  
+  .vertical-menu a.active {
+    background-image: linear-gradient(to right, #0a4397, #4948b2, #7e46c7, #b43ad4, #eb12d8);/* Add a green color to the "active/current" link */
+    color: rgb(255, 255, 255);
+  }
