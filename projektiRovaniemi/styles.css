@@ -1,0 +1,59 @@
+body {
+  background: rgb(197, 222, 233);
+}
+
+.jumbotron {
+  margin-top: 5vw;
+  color: white;
+  text-align: center;
+  background: url(./pictures/bridge.jpg) center center no-repeat;
+
+  text-shadow: -2px 0 black, 0 2px black, 2px 0 black, 0 -2px black;
+}
+
+#quate1,
+#quate2,
+#quate3 {
+  font-size: 20px;
+}
+.happiness {
+  margin-top: 5vw;
+  border-top: dotted grey 2px;
+  text-align: center;
+}
+
+div.gallery {
+  margin: 5px;
+  border: 1px solid #ccc;
+  float: left;
+  width: 180px;
+}
+
+div.gallery:hover {
+  border: 1px solid #777;
+}
+
+div.gallery img {
+  height: 100%;
+  width: 100%;
+  height: auto;
+}
+
+div.desc {
+  background: #fff;
+  padding: 15px;
+  text-align: center;
+}
+
+.jumboHead {
+  background: #fff;
+  text-align: center;
+  margin: 0 auto;
+  margin-bottom: 20px;
+  width: 50vw;
+  border: solid 1px black;
+}
+
+.addComment {
+  border-top: dotted 2px black;
+}

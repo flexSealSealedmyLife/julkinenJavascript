@@ -1,0 +1,20 @@
+body {
+  background: rgb(197, 222, 233);
+}
+
+.addCommentHead {
+  margin-top: 20px;
+  text-align: center;
+}
+
+#comments {
+  align-items: left;
+}
+
+#singleComment {
+  margin: 50px;
+}
+
+#singleComment:hover {
+  border: 2px solid black;
+}

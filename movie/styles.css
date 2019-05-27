@@ -1,0 +1,27 @@
+#movies img,
+#movie img {
+  width: 100%;
+  margin-top: 20px;
+}
+
+#movie {
+  margin-top: 20px;
+}
+
+.jumbotron {
+  margin-top: 20px;
+}
+
+@media (min-width: 960px) {
+  #movies .col-md-3 .well {
+    height: 390px;
+  }
+
+  #movies .col-md-3 img {
+    height: 240px;
+  }
+}
+
+.buttonMan {
+  text-align: center;
+}
