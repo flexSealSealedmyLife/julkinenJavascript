@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.8.2/css/all.css"
+      integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay"
+      crossorigin="anonymous"
+    />
+    <!-- custom css-->
+    <link rel="stylesheet" href="styles.css" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+    <title>Checkout</title>
+  </head>
+  <body>
+    <!-- navbar-->
+    <nav class="navbar">
+      <div class="navbar-center">
+        <span class="nav-icon">
+          <i class="fas fa-bars"></i>
+        </span>
+        <img src="./images/logo.png" alt="store logo" />
+        <div class="cart-btn">
+          <span class="nav-icon">
+            <i class="fas fa-cart-plus"></i>
+          </span>
+          <div class="cart-items">0</div>
+        </div>
+      </div>
+    </nav>
+    <!-- end of navbar-->
+    <!-- cart-->
+    <div class="cart-overlay">
+      <div class="cart">
+        <div class="cart-footer">
+          <span class="cart-total">0</span>
+        </div>
+      </div>
+    </div>
+    <!-- end of cart-->
+    <!-- checkout-->
+    <div class="checkoutbanner"></div>
+    <div class="checkoutText">
+      <i class="fas fa-shopping-basket"></i>
+      <h2><strong>Checkout</strong></h2>
+      <i class="fas fa-shopping-basket"></i>
+    </div>
+    <div class="buffer"></div>
+    <div class="basketContent">
+      <div class="basketItem"></div>
+    </div>
+    <div class="basket-footer">
+      <h3>Your Total: € <span class="cart-total">0</span></h3>
+      <button class="clear-cart banner-btn">clear cart</button>
+    </div>
+    <div class="infoContainer">
+      <div class="infoInput"></div>
+    </div>
+    <script src="./checkout.js"></script>
+  </body>
+</html>
